@@ -71,8 +71,12 @@ def main():
     # After we reach upto here, we display the generated password on the console screen
     print(f'\n[$] Password generated : \n{password}')
     choice = input('\nRegenerate? (Yes/No) : ')
-    if choice.lower() == 'n' or 'no':
-        # If the user chooses not to generate the password again, then we exit from the script
+    if choice.lower() == 'yes' or choice.lower() == 'y':
+        # If the user chooses to generate the password again, then we continue
+
+        pass
+    else:
+        # If the user chooses not to generate the password again, then we exit the script
 
         exit()
 
